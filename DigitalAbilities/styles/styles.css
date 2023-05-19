@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+  
+
+h1 {
+  font-size: 32px;
+  color: #333;
+  margin: 0;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+  
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu li:last-child {
+    margin-right: 0;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-menu li a:hover {
+    background-color: #555;
+}
+
+
+.hero-banner {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero-banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.search-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+  
+.search-input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.search-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+  }
+  
+.search-button {
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.section-title {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-catalog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.product {
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);  
+}
+
+.product-image {
+  width: 30%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-image img{
+    width:330%;
+}
+
+.product-details {
+  text-align: center;
+}
+
+.product-name {
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-price {
+  color: #777;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+t
