@@ -50,9 +50,10 @@
       opacity: 0.5;
     }
 
-    .carousel-thumbnails .thumbnail{
+    .carousel-thumbnails .thumbnail img.active {      
       opacity: 1;
     }
+    
 
   </style>
 </head>
@@ -98,6 +99,26 @@
                     <img src="images/product3.jfif" alt="Product 3" data-bs-target="#product-carousel" data-bs-slide-to="2">
                     </div>
                 </div>  
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                      var thumbnails = document.querySelectorAll('.carousel-thumbnails .thumbnail img');
+                  
+                      var carousel = document.getElementById('product-carousel');
+                      carousel.addEventListener('slid.bs.carousel', function (event) {
+                        var activeSlide = event.relatedTarget;
+                        var activeIndex = Array.from(activeSlide.parentNode.children).indexOf(activeSlide);                        
+                  
+                        thumbnails.forEach(function (thumbnail, index) {
+                          if (index === activeIndex) {
+                            thumbnail.style.opacity = 1;
+                          } else {
+                            thumbnail.style.opacity = 0.5;
+                          }
+                        });
+                      });
+                    });
+                </script>                                                
             </div>
         </div>                  
         
@@ -124,6 +145,6 @@
     <footer>
       <p>&copy; 2023 GoggleLand. All rights reserved.</p>
     </footer>
-  </div>  
+  </div>      
 </body>
 </html>
